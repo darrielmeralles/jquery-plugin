@@ -13,7 +13,19 @@
                 }
                 return array.join("");
             }
+        // settings.color = "orange";
 
-        })
-    } 
+        return this.css({
+            color: settings.color,
+            backgroundColor: settings.backgroundColor,
+            textDecoration: settings.textDecoration,
+            padding: settings.padding,
+            backgroundImage: settings.backgroundImage
+        });
+ 
+    };
+
+
+
 }(jQuery));
+
